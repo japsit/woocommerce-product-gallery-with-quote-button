@@ -1,0 +1,17 @@
+
+J	php:S1135†"4Complete the task associated to this "TODO" comment.(ù¶­á
+J	php:S1135û"4Complete the task associated to this "TODO" comment.(ù¶­á
+R	php:S1142—"<This method has 5 returns, which is more than the 3 allowed.(§“Ÿ
+n	php:S3776Y"TRefactor this function to reduce its Cognitive Complexity from 45 to the 15 allowed.(ŽãØÕøÿÿÿÿ
+o	php:S3776¼"TRefactor this function to reduce its Cognitive Complexity from 61 to the 15 allowed.(°¾øýþÿÿÿÿ
+o	php:S3776á"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(¢ð¤ûÿÿÿÿ
+c	php:S1117à"HRename "$opts" which has the same name as the field declared at line 19.(ñš½Ýúÿÿÿÿ
+7	php:S1116Ï"Remove this empty statement.(ôŸŽìúÿÿÿÿ
+7	php:S1116É"Remove this empty statement.(ôŸŽìúÿÿÿÿ
+I	php:S1172¥".Remove the unused function parameter "$level".(°Î¨ûÿÿÿÿ
+€	php:S1448"fClass "EasyWPSMTP" has 21 methods, which is greater than 20 authorized. Split it into smaller classes.(ÝîÐÿÿÿÿÿ
+E	php:S1066Ä"/Merge this if statement with the enclosing one.(¡×Ï
+E	php:S1066‚"/Merge this if statement with the enclosing one.(Ú•Ò§
+J	php:S1066ƒ"/Merge this if statement with the enclosing one.(‰›©Œûÿÿÿÿ
+J	php:S1066Œ"/Merge this if statement with the enclosing one.(Æ»ï“úÿÿÿÿ
+J	php:S1066‹"/Merge this if statement with the enclosing one.(«ð¿ðøÿÿÿÿ

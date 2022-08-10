@@ -1,0 +1,6 @@
+
+gphp:S101"NRename class "WC_Product" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(§§°©úÿÿÿÿ
+d	php:S1871³"NThis branch's code block is the same as the block for the branch on line 1585.(²Ú´ı
+_	php:S3358ò"DExtract this nested ternary operation into an independent statement.(ı€—Èûÿÿÿÿ
+	php:S1448"gClass "WC_Product" has 161 methods, which is greater than 20 authorized. Split it into smaller classes.(§§°©úÿÿÿÿ
+±	php:S3699ˆ"šRemove this use of the output from "WC_Product::before_data_store_save_or_update"; "WC_Product::before_data_store_save_or_update" doesn't return anything.(€ê®›

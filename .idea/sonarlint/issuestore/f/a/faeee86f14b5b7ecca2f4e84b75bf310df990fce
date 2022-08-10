@@ -1,0 +1,47 @@
+
+O	php:S1135"4Complete the task associated to this "TODO" comment.(·ş“şÿÿÿÿ
+O	php:S1135ˆ"4Complete the task associated to this "TODO" comment.(ñ¡™éøÿÿÿÿ
+O	php:S1135ü"4Complete the task associated to this "TODO" comment.(ÒĞ£’ùÿÿÿÿ
+S	php:S1142">This function has 4 returns, which is more than the 3 allowed.(§ğÿL
+Y	php:S1142¤">This function has 8 returns, which is more than the 3 allowed.(„ÎîÚùÿÿÿÿ
+T	php:S1142›">This function has 6 returns, which is more than the 3 allowed.(ƒíûî
+T	php:S1142•	">This function has 4 returns, which is more than the 3 allowed.(€õÑ
+T	php:S1142÷	">This function has 4 returns, which is more than the 3 allowed.(·•Å¦
+Y	php:S1142é">This function has 6 returns, which is more than the 3 allowed.(Èª’üÿÿÿÿ
+S	php:S1142¤">This function has 6 returns, which is more than the 3 allowed.(ãİîv
+U	php:S1142¢"?This function has 12 returns, which is more than the 3 allowed.(·„ú’
+Y	php:S1142•">This function has 5 returns, which is more than the 3 allowed.(âê¹Áıÿÿÿÿ
+Y	php:S1142Ğ">This function has 4 returns, which is more than the 3 allowed.(Ùœæıÿÿÿÿ
+T	php:S1142¥">This function has 7 returns, which is more than the 3 allowed.(Ó‡Á
+T	php:S1142">This function has 4 returns, which is more than the 3 allowed.(×¼ûØ
+Y	php:S1142 ">This function has 4 returns, which is more than the 3 allowed.(¯‘„øÿÿÿÿ
+U	php:S1142’%"?This function has 10 returns, which is more than the 3 allowed.(¾òìİ
+Y	php:S1142µ&">This function has 5 returns, which is more than the 3 allowed.(×’Ÿ¤ıÿÿÿÿ
+o	php:S3776é"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(Èª’üÿÿÿÿ
+o	php:S3776Ÿ"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(ç‘œ¨úÿÿÿÿ
+i	php:S3776¤"TRefactor this function to reduce its Cognitive Complexity from 29 to the 15 allowed.(ãİîv
+o	php:S3776"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(Ê¢„ªùÿÿÿÿ
+j	php:S3776¢"TRefactor this function to reduce its Cognitive Complexity from 44 to the 15 allowed.(·„ú’
+o	php:S3776•"TRefactor this function to reduce its Cognitive Complexity from 35 to the 15 allowed.(âê¹Áıÿÿÿÿ
+o	php:S3776²"TRefactor this function to reduce its Cognitive Complexity from 28 to the 15 allowed.(ÃµÑ½øÿÿÿÿ
+j	php:S3776¥"TRefactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ó‡Á
+o	php:S3776ë"TRefactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.(¿˜ÚŞøÿÿÿÿ
+j	php:S3776"TRefactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.(×¼ûØ
+o	php:S3776È"TRefactor this function to reduce its Cognitive Complexity from 28 to the 15 allowed.(ˆ­ë¤ıÿÿÿÿ
+o	php:S3776 "TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(¯‘„øÿÿÿÿ
+o	php:S3776ª#"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(ú§Ø¢ùÿÿÿÿ
+j	php:S3776Ä$"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(¸´ó
+j	php:S3776’%"TRefactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.(¾òìİ
+n	php:S1192¸"SDefine a constant instead of duplicating this literal "Invalid taxonomy." 10 times.(¦Õ×àüÿÿÿÿ
+c	php:S1192I"IDefine a constant instead of duplicating this literal "_builtin" 7 times.(¯á’€ùÿÿÿÿ
+h	php:S1192ø "MDefine a constant instead of duplicating this literal "_split_terms" 5 times.(İºÍœÿÿÿÿÿ
+b	php:S1192¦"LDefine a constant instead of duplicating this literal "Empty Term." 3 times.(‰¹É¯
+O	php:S3801ë"4Refactor this function to use "return" consistently.(¿˜ÚŞøÿÿÿÿ
+_	php:S3358ğ"DExtract this nested ternary operation into an independent statement.(Ÿ°”íÿÿÿÿÿ
+L	php:S1172¶"1Remove the unused function parameter "$taxonomy".(šÔªÒúÿÿÿÿ
+T	php:S1172”""9Remove the unused function parameter "$term_taxonomy_id".(Œ¤·üÿÿÿÿ
+T	php:S1172­""9Remove the unused function parameter "$term_taxonomy_id".(Êê¶Óüÿÿÿÿ
+O	php:S1172Ï""9Remove the unused function parameter "$term_taxonomy_id".(ßÌ¢ù
+E	php:S1066œ"/Merge this if statement with the enclosing one.(Öéä“
+J	php:S1066ç"/Merge this if statement with the enclosing one.(šĞÃ¶ıÿÿÿÿ
+php:S138"‰This function "create_initial_taxonomies" has 184 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(®³Ì`

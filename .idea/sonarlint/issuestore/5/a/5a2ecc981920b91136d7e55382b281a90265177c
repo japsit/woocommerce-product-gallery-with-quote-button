@@ -1,0 +1,32 @@
+
+S	php:S1142N">This function has 9 returns, which is more than the 3 allowed.(ğ¦¤Ñ
+Y	php:S1142€">This function has 6 returns, which is more than the 3 allowed.(úõ°Åıÿÿÿÿ
+T	php:S1142º">This function has 5 returns, which is more than the 3 allowed.(¶½àª
+Y	php:S1142»">This function has 4 returns, which is more than the 3 allowed.(Şù÷Áùÿÿÿÿ
+Y	php:S1142²">This function has 5 returns, which is more than the 3 allowed.(îŠÖşÿÿÿÿÿ
+T	php:S1142İ
+">This function has 4 returns, which is more than the 3 allowed.(ü³³è
+S	php:S1142ã">This function has 5 returns, which is more than the 3 allowed.(¿“»J
+T	php:S1142ß">This function has 4 returns, which is more than the 3 allowed.(¸÷”ˆ
+Y	php:S1142½">This function has 5 returns, which is more than the 3 allowed.(¥œâÛşÿÿÿÿ
+i	php:S3776N"TRefactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.(ğ¦¤Ñ
+o	php:S3776€"TRefactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.(úõ°Åıÿÿÿÿ
+j	php:S3776º"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(¶½àª
+o	php:S3776¼"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÿ’Ù–ÿÿÿÿÿ
+o	php:S3776ˆ"TRefactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.(æò’øÿÿÿÿ
+j	php:S3776İ
+"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(ü³³è
+i	php:S3776ã"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(¿“»J
+Œ	php:S1192h"rDefine a constant instead of duplicating this literal "The "%1$s" option key has been renamed to "%2$s"." 3 times.(ÔÜ›øÿÿÿÿ
+¡	php:S1192¾"…Define a constant instead of duplicating this literal "The "%s" options group has been removed. Use another settings group." 4 times.( â«âıÿÿÿÿ
+g	php:S1192š"LDefine a constant instead of duplicating this literal "_transient_" 4 times.(¸æùèøÿÿÿÿ
+o	php:S1192”"YDefine a constant instead of duplicating this literal "_site_transient_timeout_" 5 times.(ˆ—Üç
+o	php:S1192™"TDefine a constant instead of duplicating this literal "_transient_timeout_" 4 times.(ëÉïõüÿÿÿÿ
+[	php:S1192e"FDefine a constant instead of duplicating this literal "5.5.0" 3 times.(‹å„©
+g	php:S1192“"QDefine a constant instead of duplicating this literal "_site_transient_" 5 times.(ªÜà
+O	php:S3801Ş	"4Refactor this function to use "return" consistently.(ç‡§÷şÿÿÿÿ
+I	php:S1172š
+"3Remove the unused function parameter "$deprecated".(ÛÓæµ
+J	php:S1066î"/Merge this if statement with the enclosing one.(èÀÍ­ÿÿÿÿÿ
+J	php:S1066"/Merge this if statement with the enclosing one.(«º–çùÿÿÿÿ
+Ÿphp:S138”"‰This function "register_initial_settings" has 197 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(íÆû
