@@ -124,7 +124,7 @@ class Plugin
      */
     public function ajax_contact_form(): void
     {
-        wp_enqueue_script('ajax_pgwq_contact_form', WPGWQB_PLUGIN_DIR . '/js/contact_form.js', array('jquery'));
+        wp_enqueue_script('ajax_pgwq_contact_form', plugins_url('js/contact_form.js', __FILE__), array('jquery'));
         wp_localize_script('ajax_pgwq_contact_form', 'GalleryWithButton',
             array(
                 'ajax_url' => admin_url('admin-ajax.php'),
