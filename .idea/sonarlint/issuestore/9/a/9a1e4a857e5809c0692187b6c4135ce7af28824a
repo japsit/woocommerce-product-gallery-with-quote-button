@@ -1,15 +1,0 @@
-
-Y	php:S1142Ì">This function has 4 returns, which is more than the 3 allowed.(ñ˜ššüÿÿÿÿ
-j	php:S3776ò"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(™Íó¥
-j	php:S3776ñ"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(†Í¥”
-j	php:S3776 "TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(àÂşƒ
-j	php:S3776Ó
-"TRefactor this function to reduce its Cognitive Complexity from 26 to the 15 allowed.(›¶µó
-j	php:S3776¾"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(ú½¡ˆ
-]	php:S1192¡"GDefine a constant instead of duplicating this literal "&#36;" 28 times.(ÉÌì”
-\	php:S1192º"FDefine a constant instead of duplicating this literal "&yen;" 3 times.(«¼ò 
-^	php:S1192Ê"HDefine a constant instead of duplicating this literal "&pound;" 8 times.(ùì‰®
-{	php:S1488˜"`Immediately return this expression instead of assigning it to the temporary variable "$symbols".(èûûñúÿÿÿÿ
-D	php:S1066Á"/Merge this if statement with the enclosing one.(‰µß>
-¥php:S138Û"ŠThis function "get_woocommerce_currencies" has 176 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(ÊÒÃµÿÿÿÿÿ
-¦php:S138–"This function "get_woocommerce_currency_symbols" has 172 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(¸…şº

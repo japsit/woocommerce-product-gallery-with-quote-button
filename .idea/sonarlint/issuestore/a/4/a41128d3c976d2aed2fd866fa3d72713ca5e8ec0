@@ -1,8 +1,0 @@
-
-jphp:S101"QRename class "WP_Term_Query" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(öÅÄ¦şÿÿÿÿ
-c	php:S1301”"MReplace this "switch" statement with "if" statements to increase readability.(éËë
-W	php:S1142Û"<This method has 7 returns, which is more than the 3 allowed.(Ï¹ûÿÿÿÿ
-p	php:S3776Û"URefactor this function to reduce its Cognitive Complexity from 150 to the 15 allowed.(Ï¹ûÿÿÿÿ
-o	php:S3776Ä"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(ù€ŞÇÿÿÿÿÿ
-d	php:S1117¨"IRename "$terms" which has the same name as the field declared at line 80.(ë™¸¼ıÿÿÿÿ
-“php:S138Û"yThis function "get_terms" has 368 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(Ï¹ûÿÿÿÿ

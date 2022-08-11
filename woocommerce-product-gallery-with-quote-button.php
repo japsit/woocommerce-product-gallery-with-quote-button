@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Woocommerce Product Gallery with Quote Button
- * Plugin URI: http://www.wizardcow.fi/
+ * Plugin URI: http://www.wizardcow.fi/woocommerce-product-gallery-with-quote-button/
  * Text Domain: woocommerce-product-gallery-with-quote-button
  * Domain Path: /languages/
  * Description: Create a frontend product gallery and add quote button to each product

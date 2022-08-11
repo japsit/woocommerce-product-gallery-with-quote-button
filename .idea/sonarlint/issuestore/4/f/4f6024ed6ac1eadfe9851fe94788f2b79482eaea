@@ -1,47 +1,0 @@
-
-s%Web:ItemTagNotWithinContainerTagCheckó"<Surround this <li> item tag by a <ul> or <ol> container one.(ö¯•ÿÿÿÿÿ
-NWeb:TableWithoutCaptionCheckÅ" Add a description to this table.(¡üÓïşÿÿÿÿ
-@	Web:S5256Å"%Add "<th>" headers to this "<table>".(¡üÓïşÿÿÿÿ
-NWeb:TableWithoutCaptionCheckÍ" Add a description to this table.(çß§¶ûÿÿÿÿ
-h Web:TableHeaderHasIdOrScopeCheckĞ";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÌÙÆ´
-m Web:TableHeaderHasIdOrScopeCheckÑ";Add either an 'id' or a 'scope' attribute to this <th> tag.(‰€´àûÿÿÿÿ
-HWeb:TableWithoutCaptionCheckÑ" Add a description to this table.(•™Ç
-h Web:TableHeaderHasIdOrScopeCheckÔ";Add either an 'id' or a 'scope' attribute to this <th> tag.(âß–ç
-h Web:TableHeaderHasIdOrScopeCheckÕ";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ÿ¯Šâ
-V	Web:S5254ó"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(ëÕ¾ä
-O	php:S1135¥"4Complete the task associated to this "TODO" comment.( ¬Ù„ûÿÿÿÿ
-i	php:S3776Q"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(Œæì
-j	php:S3776µ"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.( ã††
-j	php:S3776˜"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(¬­úû
-o	php:S3776‹"TRefactor this function to reduce its Cognitive Complexity from 37 to the 15 allowed.(µ×ó ùÿÿÿÿ
-o	php:S3776ë	"TRefactor this function to reduce its Cognitive Complexity from 97 to the 15 allowed.(Œ¿¸±øÿÿÿÿ
-o	php:S3776Ë"TRefactor this function to reduce its Cognitive Complexity from 29 to the 15 allowed.(Ó•‡äÿÿÿÿÿ
-o	php:S3776ˆ"TRefactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.(ˆö´«ùÿÿÿÿ
-j	php:S3776ú"TRefactor this function to reduce its Cognitive Complexity from 36 to the 15 allowed.(Ã‚
-o	php:S3776²"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(È´ÂÒÿÿÿÿÿ
-c	php:S1192Ç
-"HDefine a constant instead of duplicating this literal "</span>" 6 times.( ŞšÁøÿÿÿÿ
-r	php:S1192˜
-"WDefine a constant instead of duplicating this literal "__back_compat_meta_box" 5 times.(¾ÃéÖúÿÿÿÿ
-t	php:S1192À"YDefine a constant instead of duplicating this literal "" size="2" maxlength="2"" 3 times.(¡ÄÏ™ıÿÿÿÿ
-¡	php:S1192§"…Define a constant instead of duplicating this literal "The "%s" options group has been removed. Use another settings group." 4 times.( â«âıÿÿÿÿ
-`	php:S1192ä"JDefine a constant instead of duplicating this literal "</option>" 3 times.(³§±Ú
-	php:S1192À"uDefine a constant instead of duplicating this literal " autocomplete="off" class="form-required" /></label>" 4 times.(¡ÄÏ™ıÿÿÿÿ
-„	php:S1192¶"iDefine a constant instead of duplicating this literal "<label><span class="screen-reader-text">" 5 times.(àÌàÜşÿÿÿÿ
-e	php:S1192É
-"JDefine a constant instead of duplicating this literal "</button>" 3 times.(üô”Ãÿÿÿÿÿ
-x	php:S1192¶
-"bDefine a constant instead of duplicating this literal "<span class="screen-reader-text">" 5 times.(¤‡õÍ
-~	php:S1192œ
-"cDefine a constant instead of duplicating this literal "__block_editor_compatible_meta_box" 3 times.(”æÌ™üÿÿÿÿ
-c	php:S1192¿"HDefine a constant instead of duplicating this literal "</div>" 15 times.(–µ£ßùÿÿÿÿ
-e	php:S1192Á"JDefine a constant instead of duplicating this literal "meta name" 3 times.(çñ¨ ùÿÿÿÿ
-f	php:S1192±"KDefine a constant instead of duplicating this literal "page label" 3 times.(“ ²Æüÿÿÿÿ
-b	php:S1192’"LDefine a constant instead of duplicating this literal "post status" 7 times.(á¦Ÿ
-v	php:S1192À"[Define a constant instead of duplicating this literal "</span><input type="text" " 4 times.(¡ÄÏ™ıÿÿÿÿ
-m	php:S1192¾
-"RDefine a constant instead of duplicating this literal "__widget_basename" 3 times.(´ßîÑşÿÿÿÿ
-e	php:S1192Ü"JDefine a constant instead of duplicating this literal "" value="" 3 times.(ÂÓìÆúÿÿÿÿ
-D	php:S1481ñ")Remove this unused "$key" local variable.(¼Ş¤îøÿÿÿÿ
-K	php:S1172Ñ"5Remove the unused function parameter "$default_term".(€²¨ú
-I	php:S1172é"3Remove the unused function parameter "$deprecated".(ŸÁä•
