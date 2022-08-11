@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Woocommerce Product Gallery with Quote Button
- * Plugin URI: http://www.wizardcow.fi/woocommerce-product-gallery-with-quote-button/
- * Text Domain: woocommerce-product-gallery-with-quote-button
+ * Plugin Name: Product Gallery with Quote Button
+ * Plugin URI: http://www.wizardcow.fi/product-gallery-with-quote-button/
+ * Text Domain: product-gallery-with-quote-button
  * Domain Path: /languages/
  * Description: Create a frontend product gallery and add quote button to each product
  * License: GPL3
@@ -11,13 +11,13 @@
  * Author URI: http://www.wizardcow.fi/
  */
 
-namespace WooCommerceProductGalleryWithQuoteButton;
+namespace ProductGalleryWithQuoteButton;
 
 define('WPGWQB_PLUGIN', __FILE__);
 define('WPGWQB_PLUGIN_BASENAME', plugin_basename(WPGWQB_PLUGIN));
 define('WPGWQB_PLUGIN_NAME', trim(dirname(WPGWQB_PLUGIN_BASENAME), '/'));
 define('WPGWQB_PLUGIN_DIR', untrailingslashit(dirname(WPGWQB_PLUGIN)));
-define('WPGWQB_TEXT_DOMAIN', 'woocommerce-product-gallery-with-quote-button');
+define('WPGWQB_TEXT_DOMAIN', 'product-gallery-with-quote-button');
 
 /**
  * This plugin is used to create a gallery with quote button from woocommerce products
@@ -72,7 +72,7 @@ class Plugin
      */
     public function wpgwqb_load_textdomain(): void
     {
-        load_plugin_textdomain('woocommerce-product-gallery-with-quote-button',
+        load_plugin_textdomain(WPGWQB_TEXT_DOMAIN,
             false, WPGWQB_PLUGIN_DIR . '/languages/');
     }
 

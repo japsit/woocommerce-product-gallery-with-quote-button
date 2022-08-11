@@ -1,6 +1,6 @@
 <?php
 
-namespace WooCommerceProductGalleryWithQuoteButton\Modules\Product;
+namespace ProductGalleryWithQuoteButton\Modules\Product;
 
 /**
  * Product is a class for products and their details

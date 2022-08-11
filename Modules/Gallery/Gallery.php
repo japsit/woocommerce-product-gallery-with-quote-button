@@ -1,10 +1,10 @@
 <?php
 
-namespace WooCommerceProductGalleryWithQuoteButton\Modules\Gallery;
+namespace ProductGalleryWithQuoteButton\Modules\Gallery;
 
 require_once WPGWQB_PLUGIN_DIR . '/Modules/Product/Product.php';
 
-use WooCommerceProductGalleryWithQuoteButton\Modules\Product\Product;
+use ProductGalleryWithQuoteButton\Modules\Product\Product;
 
 
 class Gallery

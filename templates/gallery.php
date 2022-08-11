@@ -1,7 +1,7 @@
 <?php
 require_once WPGWQB_PLUGIN_DIR . '/Modules/Gallery/Gallery.php';
 
-use WooCommerceProductGalleryWithQuoteButton\Modules\Gallery\Gallery;
+use ProductGalleryWithQuoteButton\Modules\Gallery\Gallery;
 
 // Get from Settings which categories should be shown in Gallery
 $options = (array)get_option('wpgwqb_show_category');
@@ -45,7 +45,7 @@ $button = "<button><span>$button_text</span></button>";
             <div class='wpg-wrap-image'> <?= $product->thumbnail ?> </div>
             <div class='gallery-item-text-content'>
                 <button class="wpg-gallery-item-button"
-                        onclick="GalleryButtonRequestQuote(<?= $product->get_id() ?>)"><?= __('Request quote', 'woocommerce-product-gallery-with-quote-button') ?></button>
+                        onclick="GalleryButtonRequestQuote(<?= $product->get_id() ?>)"><?= __('Request quote', WPGWQB_TEXT_DOMAIN) ?></button>
                 <div class='price'><?= number_format($product->price, 2); ?> <?= get_woocommerce_currency_symbol(); ?></div>
                 <h2 class='title'><?= $product->name ?></h2>
                 <p> <?= $product->description ?> </p>
