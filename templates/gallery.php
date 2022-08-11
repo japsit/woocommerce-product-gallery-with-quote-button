@@ -1,7 +1,7 @@
 <?php
 require_once WPGWQB_PLUGIN_DIR . '/Modules/Gallery/Gallery.php';
 
-use GalleryWithButton\Modules\Gallery\Gallery;
+use WooCommerceProductGalleryWithQuoteButton\Modules\Gallery\Gallery;
 
 // Get from Settings which categories should be shown in Gallery
 $options = (array)get_option('wpgwqb_show_category');

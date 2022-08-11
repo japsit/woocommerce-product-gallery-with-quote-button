@@ -1,6 +1,6 @@
 <?php
 
-namespace GalleryWithButton\Modules\Settings;
+namespace WooCommerceProductGalleryWithQuoteButton\Modules\Settings;
 
 /**
  * Class for settings page shown in admin panel

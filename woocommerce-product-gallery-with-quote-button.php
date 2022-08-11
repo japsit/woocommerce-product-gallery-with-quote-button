@@ -11,7 +11,7 @@
  * Author URI: http://www.wizardcow.fi/
  */
 
-namespace GalleryWithButton;
+namespace WooCommerceProductGalleryWithQuoteButton;
 
 define('WPGWQB_PLUGIN', __FILE__);
 define('WPGWQB_PLUGIN_BASENAME', plugin_basename(WPGWQB_PLUGIN));
