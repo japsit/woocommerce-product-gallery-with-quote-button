@@ -16,7 +16,7 @@ class Gallery
      *
      * @return void
      */
-    public function set_products($filters = array()): void
+    public function set_products(array $filters = array()): void
     {
         $this->products = array();
         $products = wc_get_products($filters);
