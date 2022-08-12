@@ -115,7 +115,7 @@ class Plugin
 
         $email = sanitize_email(get_option('wpgwqb_email_to'));
 
-        if (filter_var($email, FILTER_VALIDATE_EMAIL) === true) {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false) {
             if (wp_mail($email, "Quote request received: $product_name($product_id)", $message)) {
                 echo __('Message has been sent successfully', WPGWQB_TEXT_DOMAIN);
             }

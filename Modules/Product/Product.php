@@ -7,9 +7,9 @@ namespace ProductGalleryWithQuoteButton\Modules\Product;
  */
 class Product
 {
-    private $id;
+    public $id;
     public $name = '';
-    public $description = '';
+    public $desc = '';
     public $price = 0.0;
     public $thumbnail;
 
@@ -21,7 +21,7 @@ class Product
         $this->id = (int)$product->id;
         $this->name = filter_var($product->name, FILTER_SANITIZE_STRING);
         $this->price = (float)$product->price;
-        $this->description = filter_var($product->description, FILTER_SANITIZE_STRING);
+        $this->desc = filter_var($product->description, FILTER_SANITIZE_STRING);
         $this->thumbnail = $product->get_image(); // image in img tag
     }
 
@@ -56,7 +56,7 @@ class Product
      */
     public function set_desc(string $desc): void
     {
-        $this->description = $desc;
+        $this->desc = $desc;
     }
 
     /**

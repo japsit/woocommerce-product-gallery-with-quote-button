@@ -46,14 +46,14 @@ class Settings
         if (empty($product_categories) === false) {
             echo '';
             foreach ($product_categories as $key => $category) {
-                $checked = checked(in_array($category->term_id, $show_category), true, false);
-                $id = $category->term_id;
+                $checked = esc_html(checked(in_array($category->term_id, $show_category), true, false));
+                $id = esc_html($category->term_id);
                 $html = "<label>";
                 $html .= "<input type='checkbox' name='wpgwqb_show_category[show_category_field][]' value='$id' $checked>";
-                $html .= "$category->name";
+                $html .= esc_html($category->name);
                 $html .= "</label>";
                 $html .= '<br>';
-                echo esc_html($html);
+                echo $html;
             }
         }
     }
@@ -85,7 +85,7 @@ class Settings
      */
     function display_email_form_element(): void
     {
-        echo esc_html("<input type='email' name='wpgwqb_email_to' value='" . esc_attr(get_option('wpgwqb_email_to')) . "' />");
+        echo "<input type='email' name='wpgwqb_email_to' value='" . esc_attr(get_option('wpgwqb_email_to')) . "' />";
     }
 
     /**
@@ -95,7 +95,7 @@ class Settings
      */
     function render_page(): void
     {
-        if (method_exists($this::class, 'display_quote_gallery_settings') === true) {
+        if (method_exists('ProductGalleryWithQuoteButton\Modules\Settings\Settings', 'display_quote_gallery_settings') === true) {
             // Include settings page's content template with dynamic content
             include WPGWQB_PLUGIN_DIR . '/templates/settings-admin.php';
         }

@@ -3,7 +3,7 @@
 
 <div id="gallery-with-quote-contact-form-div">
     <form method="post" id="gallery-with-quote-contact-form" enctype="multipart/form-data">
-        <?php wp_nonce_field('gallery_with_quote_contact_form', 'name_of_nonce_field'); ?>
+        <?php wp_nonce_field('pgwq_send_mail', 'gallery_with_quote'); ?>
 
         <h2><?php esc_html_e('Contact us', WPGWQB_TEXT_DOMAIN); ?></h2>
 
@@ -40,7 +40,7 @@
             <?php esc_html_e('Message sent successfully', WPGWQB_TEXT_DOMAIN); ?>
         </div>
 
-        <div class="error_msg" style="display: none">Message
+        <div class="error_msg" style="display: none">
             <?php esc_html_e('Message not sent. Error occured.', WPGWQB_TEXT_DOMAIN); ?>
         </div>
 
