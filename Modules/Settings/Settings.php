@@ -53,7 +53,7 @@ class Settings
                 $html .= "$category->name";
                 $html .= "</label>";
                 $html .= '<br>';
-                esc_html_e($html);
+                echo esc_html($html);
             }
         }
     }
@@ -85,7 +85,7 @@ class Settings
      */
     function display_email_form_element(): void
     {
-        esc_html_e("<input type='email' name='wpgwqb_email_to' value='" . esc_attr(get_option('wpgwqb_email_to')) . "' />");
+        echo esc_html("<input type='email' name='wpgwqb_email_to' value='" . esc_attr(get_option('wpgwqb_email_to')) . "' />");
     }
 
     /**
