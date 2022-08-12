@@ -4,7 +4,7 @@ Tags: quote, gallery, woocommerce, product, email, form, contact, ajax, multilin
 Requires at least: 5.6
 Tested up to: 6.0
 Stable tag: 1.0
-Requires PHP: 7.0
+Requires PHP: 7.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 

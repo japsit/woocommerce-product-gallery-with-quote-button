@@ -100,18 +100,23 @@ class Plugin
         $product_id = (int)$_POST['product_id'];
         $product = wc_get_product($product_id);
         $product_name = $product->get_name();
+        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+        $tel = filter_var($_POST['tel'], FILTER_SANITIZE_NUMBER_INT);
+        $contact_email = sanitize_email($_POST['email']);
 
         $message = __('Product id', WPGWQB_TEXT_DOMAIN) . ": $product_id\r\n";
         $message .= __('Product name', WPGWQB_TEXT_DOMAIN) . ": $product_name\r\n\r\n";
         $message .= __('Contact details', WPGWQB_TEXT_DOMAIN) . "\r\n";
-        $message .= __('Name', WPGWQB_TEXT_DOMAIN) . ": {$_POST['name']}\r\n";
-        $message .= __('Telephone', WPGWQB_TEXT_DOMAIN) . ":  {$_POST['tel']}\r\n";
-        $message .= __('Email', WPGWQB_TEXT_DOMAIN) . ": {$_POST['email']}\r\n";
+        $message .= __('Name', WPGWQB_TEXT_DOMAIN) . ": $name\r\n";
+        $message .= __('Telephone', WPGWQB_TEXT_DOMAIN) . ":  $tel\r\n";
+        $message .= __('Email', WPGWQB_TEXT_DOMAIN) . ": $contact_email\r\n";
 
         $email = filter_var(get_option('wpgwqb_email_to'), FILTER_SANITIZE_EMAIL);
 
-        if (wp_mail($email, "Quote request received: $product_name($product_id)", $message)) {
-            echo __('Message has been sent successfully', WPGWQB_TEXT_DOMAIN);
+        if (filter_var($email, FILTER_VALIDATE_EMAIL) === true) {
+            if (wp_mail($email, "Quote request received: $product_name($product_id)", $message)) {
+                echo __('Message has been sent successfully', WPGWQB_TEXT_DOMAIN);
+            }
         } else {
             die(__('Sending message failed', WPGWQB_TEXT_DOMAIN));
         }
@@ -144,6 +149,6 @@ class Plugin
     }
 }
 
-new Plugin();
+$woocommerce_product_gallery_with_quote_button = new Plugin();
 
 
