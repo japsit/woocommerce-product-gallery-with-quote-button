@@ -30,10 +30,8 @@ class Gallery
      *
      * @return array
      */
-    public function get_products()
+    public function get_products(): array
     {
         return $this->products;
     }
-
-
 }
