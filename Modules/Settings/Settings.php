@@ -53,7 +53,7 @@ class Settings
                 $html .= "$category->name";
                 $html .= "</label>";
                 $html .= '<br>';
-                esc_html_e($html);
+                echo esc_html($html);
             }
         }
     }
