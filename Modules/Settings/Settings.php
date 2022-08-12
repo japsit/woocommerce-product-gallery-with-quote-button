@@ -7,7 +7,7 @@ namespace ProductGalleryWithQuoteButton\Modules\Settings;
  */
 class Settings
 {
-    private string $page = WPGWQB_PLUGIN_NAME . '-settings-group';
+    private $page = WPGWQB_PLUGIN_NAME . '-settings-group';
 
     function __construct()
     {
@@ -48,11 +48,12 @@ class Settings
             foreach ($product_categories as $key => $category) {
                 $checked = checked(in_array($category->term_id, $show_category), true, false);
                 $id = $category->term_id;
-                echo "<label>";
-                echo "<input type='checkbox' name='wpgwqb_show_category[show_category_field][]' value='$id' $checked>";
-                echo "$category->name";
-                echo "</label>";
-                echo '<br>';
+                $html = "<label>";
+                $html .= "<input type='checkbox' name='wpgwqb_show_category[show_category_field][]' value='$id' $checked>";
+                $html .= "$category->name";
+                $html .= "</label>";
+                $html .= '<br>';
+                esc_html_e($html);
             }
         }
     }
@@ -84,7 +85,7 @@ class Settings
      */
     function display_email_form_element(): void
     {
-        echo "<input type='email' name='wpgwqb_email_to' value='" . esc_attr(get_option('wpgwqb_email_to')) . "' />";
+        esc_html_e("<input type='email' name='wpgwqb_email_to' value='" . esc_attr(get_option('wpgwqb_email_to')) . "' />");
     }
 
     /**

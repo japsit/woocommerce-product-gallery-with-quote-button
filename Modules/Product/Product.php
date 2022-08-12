@@ -7,16 +7,16 @@ namespace ProductGalleryWithQuoteButton\Modules\Product;
  */
 class Product
 {
-    private int $id;
-    public string $name = '';
-    public string $description = '';
-    public float $price = 0.0;
-    public string $thumbnail;
+    private $id;
+    public $name = '';
+    public $description = '';
+    public $price = 0.0;
+    public $thumbnail;
 
     /**
      * @param object $product
      */
-    public function __construct(object $product)
+    public function __construct($product)
     {
         $this->id = (int)$product->id;
         $this->name = filter_var($product->name, FILTER_SANITIZE_STRING);
@@ -42,7 +42,7 @@ class Product
      *
      * @return void
      */
-    public function set_name(string $name)
+    public function set_name(string $name): void
     {
         $this->name = $name;
     }
@@ -54,7 +54,7 @@ class Product
      *
      * @return void
      */
-    public function set_desc(string $desc)
+    public function set_desc(string $desc): void
     {
         $this->description = $desc;
     }
@@ -66,7 +66,7 @@ class Product
      *
      * @return void
      */
-    public function set_price(float $price)
+    public function set_price(float $price): void
     {
         $this->price = $price;
     }

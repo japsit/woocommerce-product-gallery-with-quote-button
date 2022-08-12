@@ -15,10 +15,6 @@ $gallery->set_products(['category' => $categories]);
 
 // Set product in variable
 $products = $gallery->get_products();
-// Define button Make an offer
-$button_text = __('Make an offer', WPGWQB_TEXT_DOMAIN);
-$button = "<button><span>$button_text</span></button>";
-
 ?>
 
 <script>
@@ -31,24 +27,24 @@ $button = "<button><span>$button_text</span></button>";
     foreach ($products as $product) {
     ?>
     GalleryWithButton.Products.push({
-        id: '<?=$product->get_id()?>',
-        name: '<?=addslashes(json_encode($product->name))?>',
-        desc: '<?=addslashes(json_encode($product->description))?>',
-        price: '<?=json_encode($product->price)?>',
+        id: '<?php echo (int)$product->get_id(); ?>',
+        name: '<?php echo addslashes(json_encode($product->name));?>',
+        desc: '<?php echo addslashes(json_encode($product->description));?>',
+        price: '<?php echo json_encode($product->price);?>',
     });
     <?php } ?>
 </script>
 
 <div class="wpg-gallery">
     <?php foreach ($products as $product) { ?>
-        <div class='wpg-gallery-item' key=" <?= $product->get_id() ?>">
-            <div class='wpg-wrap-image'> <?= $product->thumbnail ?> </div>
+        <div class='wpg-gallery-item' key=" <?php esc_attr_e($product->get_id()); ?>">
+            <div class='wpg-wrap-image'> <?php echo $product->thumbnail; ?> </div>
             <div class='gallery-item-text-content'>
                 <button class="wpg-gallery-item-button"
-                        onclick="GalleryButtonRequestQuote(<?= $product->get_id() ?>)"><?= __('Request quote', WPGWQB_TEXT_DOMAIN) ?></button>
-                <div class='price'><?= number_format($product->price, 2); ?> <?= get_woocommerce_currency_symbol(); ?></div>
-                <h2 class='title'><?= $product->name ?></h2>
-                <p> <?= $product->description ?> </p>
+                        onclick="GalleryButtonRequestQuote(<?php esc_attr_e($product->get_id()); ?>)"><?php esc_html_e('Request quote', WPGWQB_TEXT_DOMAIN); ?></button>
+                <div class='price'><?php echo esc_html(number_format($product->price, 2)); ?><?php echo esc_html(get_woocommerce_currency_symbol()); ?></div>
+                <h2 class='title'><?php echo esc_html($product->name); ?></h2>
+                <p> <?php echo esc_html($product->description); ?> </p>
             </div>
         </div>
     <?php } ?>
