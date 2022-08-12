@@ -24,6 +24,8 @@ define('WPGWQB_TEXT_DOMAIN', 'product-gallery-with-quote-button');
  */
 class Plugin
 {
+    public $settings_page = null;
+    
     public function __construct()
     {
         if (!function_exists('is_plugin_active')) {
