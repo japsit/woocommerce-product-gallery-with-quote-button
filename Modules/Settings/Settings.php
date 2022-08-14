@@ -12,8 +12,8 @@ class Settings
     function __construct()
     {
         // Add menu page to the sidebar
-        add_menu_page(__('Gallery with Quote settings', WPGWQB_TEXT_DOMAIN),
-            __('Gallery with Quote', WPGWQB_TEXT_DOMAIN),
+        add_menu_page(__('Gallery with Quote settings', 'product-gallery-with-quote-button'),
+            __('Gallery with Quote', 'product-gallery-with-quote-button'),
             'administrator',
             WPGWQB_PLUGIN_NAME,
             array($this, 'render_page'),
@@ -53,11 +53,7 @@ class Settings
                 $html .= esc_html($category->name);
                 $html .= "</label>";
                 $html .= '<br>';
-<<<<<<< HEAD
-                echo $html;
-=======
                 echo esc_html($html);
->>>>>>> d2ffe0a6b6288ce578a3a8622782b501a9481b8a
             }
         }
     }

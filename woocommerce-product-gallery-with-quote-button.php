@@ -74,7 +74,7 @@ class Plugin
      */
     public function wpgwqb_load_textdomain(): void
     {
-        load_plugin_textdomain(WPGWQB_TEXT_DOMAIN,
+        load_plugin_textdomain('product-gallery-with-quote-button',
             false, WPGWQB_PLUGIN_DIR . '/languages/');
     }
 
@@ -106,21 +106,21 @@ class Plugin
         $tel = filter_var($_POST['tel'], FILTER_SANITIZE_NUMBER_INT);
         $contact_email = sanitize_email($_POST['email']);
 
-        $message = __('Product id', WPGWQB_TEXT_DOMAIN) . ": $product_id\r\n";
-        $message .= __('Product name', WPGWQB_TEXT_DOMAIN) . ": $product_name\r\n\r\n";
-        $message .= __('Contact details', WPGWQB_TEXT_DOMAIN) . "\r\n";
-        $message .= __('Name', WPGWQB_TEXT_DOMAIN) . ": $name\r\n";
-        $message .= __('Telephone', WPGWQB_TEXT_DOMAIN) . ":  $tel\r\n";
-        $message .= __('Email', WPGWQB_TEXT_DOMAIN) . ": $contact_email\r\n";
+        $message = __('Product id', 'product-gallery-with-quote-button') . ": $product_id\r\n";
+        $message .= __('Product name', 'product-gallery-with-quote-button') . ": $product_name\r\n\r\n";
+        $message .= __('Contact details', 'product-gallery-with-quote-button') . "\r\n";
+        $message .= __('Name', 'product-gallery-with-quote-button') . ": $name\r\n";
+        $message .= __('Telephone', 'product-gallery-with-quote-button') . ":  $tel\r\n";
+        $message .= __('Email', 'product-gallery-with-quote-button') . ": $contact_email\r\n";
 
         $email = sanitize_email(get_option('wpgwqb_email_to'));
 
         if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false) {
             if (wp_mail($email, "Quote request received: $product_name($product_id)", $message)) {
-                echo __('Message has been sent successfully', WPGWQB_TEXT_DOMAIN);
+                echo __('Message has been sent successfully', 'product-gallery-with-quote-button');
             }
         } else {
-            die(__('Sending message failed', WPGWQB_TEXT_DOMAIN));
+            die(__('Sending message failed', 'product-gallery-with-quote-button'));
         }
     }
 
