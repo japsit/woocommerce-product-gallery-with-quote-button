@@ -15,21 +15,25 @@ $gallery->set_products(['category' => $categories]);
 
 // Set product in variable
 $products = $gallery->get_products();
-$json = htmlspecialchars_decode(json_encode($products, JSON_HEX_QUOT), ENT_SUBSTITUTE | ENT_NOQUOTES);
+
+// Allow image tag html
+$allow_html_img = ['img' => ['width' => [], 'height' => [], 'src' => [], 'alt' => [], 'loading' => []]];
 ?>
 
 <script>
     if (typeof GalleryWithButton === 'undefined') {
         var GalleryWithButton = {};
     }
-    GalleryWithButton.Products = <?php echo $json; ?>;
+    GalleryWithButton.Products = <?php
+    echo htmlspecialchars_decode(json_encode($products, JSON_HEX_QUOT), ENT_SUBSTITUTE | ENT_NOQUOTES);
+    ?>;
 
 </script>
 
 <div class="wpg-gallery">
     <?php foreach ($products as $product) { ?>
         <div class='wpg-gallery-item' key=" <?php esc_attr_e($product->get_id()); ?>">
-            <div class='wpg-wrap-image'> <?php echo $product->thumbnail; ?> </div>
+            <div class='wpg-wrap-image'> <?php echo wp_kses($product->thumbnail, $allow_html_img); ?> </div>
             <div class='gallery-item-text-content'>
                 <button class="wpg-gallery-item-button"
                         onclick="GalleryButtonRequestQuote(<?php esc_attr_e($product->get_id()); ?>)"><?php esc_html_e('Request quote', 'product-gallery-with-quote-button'); ?></button>

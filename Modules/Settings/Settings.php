@@ -46,15 +46,20 @@ class Settings
         if (empty($product_categories) === false) {
             echo '';
             foreach ($product_categories as $key => $category) {
-                $checked = esc_html(checked(in_array($category->term_id, $show_category), true, false));
-                $id = esc_html($category->term_id);
+                $checked = checked(in_array($category->term_id, $show_category), true, false);
+                $id = esc_attr($category->term_id);
+
+                $allowed_html = [
+                    'label' => [],
+                    'input' => ['type' => [], 'name' => [], 'value' => [], 'checked' => [], 'br' => []],
+                    'br' => []
+                ];
                 $html = "<label>";
                 $html .= "<input type='checkbox' name='wpgwqb_show_category[show_category_field][]' value='$id' $checked>";
                 $html .= esc_html($category->name);
                 $html .= "</label>";
-                $html .= '<br>';
-
-                echo $html;
+                $html .= "<br>";
+                echo wp_kses($html, $allowed_html);
             }
         }
     }
@@ -86,7 +91,10 @@ class Settings
      */
     function display_email_form_element(): void
     {
-        echo "<input type='email' name='wpgwqb_email_to' value='" . esc_attr(get_option('wpgwqb_email_to')) . "' />";
+        $wpgwqb_email_to = filter_var(get_option('wpgwqb_email_to'), FILTER_VALIDATE_EMAIL) ? get_option('wpgwqb_email_to') : "";
+        $allowed_html = ['input' => ['type' => [], 'name' => [], 'value' => []]];
+        $html = "<input type='email' name='wpgwqb_email_to' value='$wpgwqb_email_to' />";
+        echo wp_kses($html, $allowed_html);
     }
 
     /**
