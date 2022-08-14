@@ -32,7 +32,7 @@ $json = htmlspecialchars_decode(json_encode($products, JSON_HEX_QUOT), ENT_SUBST
             <div class='wpg-wrap-image'> <?php echo $product->thumbnail; ?> </div>
             <div class='gallery-item-text-content'>
                 <button class="wpg-gallery-item-button"
-                        onclick="GalleryButtonRequestQuote(<?php esc_attr_e($product->get_id()); ?>)"><?php esc_html_e('Request quote', WPGWQB_TEXT_DOMAIN); ?></button>
+                        onclick="GalleryButtonRequestQuote(<?php esc_attr_e($product->get_id()); ?>)"><?php esc_html_e('Request quote', 'product-gallery-with-quote-button'); ?></button>
                 <div class='price'><?php echo esc_html(number_format($product->price, 2)); ?><?php echo esc_html(get_woocommerce_currency_symbol()); ?></div>
                 <h2 class='title'><?php echo esc_html($product->name); ?></h2>
                 <p> <?php echo esc_html($product->desc); ?> </p>
