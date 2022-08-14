@@ -15,27 +15,31 @@ div.wpg-gallery {
     flex-direction: column;
     margin: 1em;
     padding: 1em;
-   /* border: 1px solid #ccc;*/
+    /* border: 1px solid #ccc;*/
     width: 300px;
     word-break: break-all;
 }
 
 .wpg-gallery-item div.price {
-    padding:1em;
+    padding: 1em;
     font-weight: bold;
 
 }
 
-.wpg-gallery-item h2.title{
+.wpg-gallery-item h2.title {
     font-size: 3rem;
     margin-top: 0;
+    font-feature-settings: "lnum";
+    font-variant-numeric: lining-nums;
+    font-weight: 700;
+    letter-spacing: -0.0415625em;
+    line-height: 1.25;
 }
 
 .gallery-item-text-content {
     border: 1px solid #ccc;
     margin-top: 1em;
 }
-
 
 
 .wpg-gallery-item button {
@@ -45,12 +49,11 @@ div.wpg-gallery {
 
 .wpg-gallery-item img {
     padding: 1em;
-    width:100%;
-    height:200px;
-    object-fit:cover;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     margin: 0;
 }
-
 
 
 /* Contact form CSS */
@@ -64,7 +67,7 @@ div.wpg-gallery {
     overflow-y: auto;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
-    z-index:2000;
+    z-index: 2000;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 5px;
     background: linear-gradient(-45deg, #f8f07f, #ffffff, #ffd32f, #ffffff);
@@ -109,7 +112,7 @@ div.wpg-gallery {
 }
 
 #gallery-with-quote-contact-form-div input[type=text],
-#gallery-with-quote-contact-form-div input[type=email]{
+#gallery-with-quote-contact-form-div input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -139,12 +142,15 @@ form#gallery-with-quote-contact-form input {
 #gallery-with-quote-contact-form {
 
 }
+
 #gallery-with-quote-contact-form {
 
 }
+
 #gallery-with-quote-contact-form {
 
 }
+
 #gallery-with-quote-contact-form {
 
 }

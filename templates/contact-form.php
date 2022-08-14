@@ -29,7 +29,7 @@
 
         <label for="gallery-with-quote-form-tel"><?php esc_html_e('Telephone', 'product-gallery-with-quote-button') ?></label>
         <input type="text" id="gallery-with-quote-form-tel" name="gallery-with-quote-form-tel"
-               placeholder="+0401234567">
+               placeholder="+358401234567">
 
         <div id="msg"></div>
         <button id="gallery-with-quote-form-button"
