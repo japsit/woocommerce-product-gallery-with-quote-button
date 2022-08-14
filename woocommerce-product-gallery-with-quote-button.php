@@ -99,6 +99,10 @@ class Plugin
      */
     public function pgwq_send_mail(): void
     {
+        if (wp_verify_nonce($_POST['gallery_quote_nonce'], 'pgwq_send_mail') === false) {
+            wp_send_json_error(__('Nonce failed.', 'product-gallery-with-quote-button'), 401);
+        }
+
         $product_id = (int)$_POST['product_id'];
         $product = wc_get_product($product_id);
         $product_name = $product->get_name();
@@ -117,10 +121,10 @@ class Plugin
 
         if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false) {
             if (wp_mail($email, "Quote request received: $product_name($product_id)", $message)) {
-                echo __('Message has been sent successfully', 'product-gallery-with-quote-button');
+                wp_send_json(__('Message has been sent successfully', 'product-gallery-with-quote-button'), 200);
             }
         } else {
-            die(__('Sending message failed', 'product-gallery-with-quote-button'));
+            wp_send_json(__('Sending message failed', 'product-gallery-with-quote-button'), 500);
         }
     }
 

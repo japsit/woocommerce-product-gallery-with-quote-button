@@ -5,6 +5,7 @@ jQuery(document).ready(function () {
         let elem_name = jQuery("#gallery-with-quote-form-name").val();
         let elem_tel = jQuery("#gallery-with-quote-form-tel").val();
         let elem_email = jQuery("#gallery-with-quote-form-email").val();
+        let elem_nonce = jQuery("#gallery_with_quote").val();
 
         if (isNaN(product_id) === true) {
             console.log("Cannot find product id from form.")
@@ -14,17 +15,19 @@ jQuery(document).ready(function () {
         let name = (typeof elem_name === 'undefined') ? "" : elem_name;
         let tel = (typeof elem_tel === 'undefined') ? "" : elem_tel;
         let email = (typeof elem_email === 'undefined') ? "" : elem_email;
+        let nonce = (typeof elem_nonce === 'undefined') ? "" : elem_nonce;
 
         let data = {
             action: 'pgwq_mail',
             product_id: product_id,
             name: name,
             tel: tel,
-            email: email
+            email: email,
+            gallery_quote_nonce: nonce,
         };
 
         jQuery.post(GalleryWithButton.ajax_url, data, function (response) {
-            console.log("Message has been sent.");
+            console.log(response);
         });
 
         let form = jQuery("#gallery-with-quote-contact-form-div");
