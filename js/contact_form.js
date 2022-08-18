@@ -48,8 +48,8 @@ function GalleryButtonRequestQuote(id) {
     let product_desc = document.getElementById('gwqf-product-desc');
     let product_price = document.getElementById('gwqf-product-price');
     let form = jQuery("#gallery-with-quote-contact-form-div");
-    product_name.textContent = product.name;
-    product_desc.textContent = product.desc;
+    product_name.textContent = product.name.replace('&#34;', '"');
+    product_desc.textContent = product.desc.replace('&#34;', '"');
     product_price.textContent = product.price;
     form.show();
 }

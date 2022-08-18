@@ -8,13 +8,19 @@ Requires PHP: 7.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-Plugin for making product gallery and requesting quotes.
+This plugin creates a gallery from WooCommerce's products and adds Quote button to each product. By clicking the button a customer can send email and make a quote.
 
 == Description ==
 
 Product Gallery with Quote button makes a gallery from Products which can be added via WooCommerce. You can choose product category which products will be shown in the gallery. The plugin adds Quote button to each product. Clicking the button a user can make a contact request.
 
-= Recommended plugins =
+== Screenshots ==
+
+1. This screen shot shows the gallery screenshot-1.png. Screenshots are stored in the /assets directory.
+2. This screen shot shows the gallery with contact form screenshot-2.png.
+3. This screen shot shows the settings page screenshot-3.png.
+
+== Recommended plugins ==
 
 The following plugins are recommended for Product Gallery with Quote Button users:
 

@@ -17,7 +17,7 @@ div.wpg-gallery {
     padding: 1em;
     /* border: 1px solid #ccc;*/
     width: 300px;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .wpg-gallery-item div.price {
@@ -44,6 +44,7 @@ div.wpg-gallery {
 
 .wpg-gallery-item button {
     margin-top: -50%;
+    border-radius: 1rem;
 }
 
 
